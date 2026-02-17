@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Dreamese - Kiến trúc & Nội thất</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <style>
+            <style>
         /* ===== FONT ===== */
         @font-face {
             font-family: "None";
@@ -12,11 +12,11 @@
         }
         @font-face {
             font-family: "Avo";
-            src: url("Fonts/UTM_Avo.ttf");
+            src: url("CSS/Fonts/UTM_Avo.ttf");
         }
         @font-face {
             font-family: "God";
-            src: url("Fonts/UTM_God_WordR.ttf");
+            src: url("CSS/Fonts/UTM_God_WordR.ttf");
         }
 
         /* ===== RESET & NỀN TỔNG THỂ ===== */
@@ -318,6 +318,29 @@
     background: #b48a5a;
     opacity: 0.5;
 }
+/* ===== HERO RESPONSIVE CONTENT ===== */
+.hero-mobile {
+    display: none;
+}
+
+@media (max-width: 900px) {
+    .hero-desktop {
+        display: none;
+    }
+
+    .hero-mobile {
+        display: block;
+    }
+
+    .hero-mobile h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-mobile p {
+        font-size: 0.95rem;
+        margin-top: 20px;
+    }
+}
 
 
     </style>
@@ -351,29 +374,39 @@
 
 <section id="home">
     <div>
-        <h1>
-            Thiết kế không gian<br>
-            <span class="hero-line">như viết 1 câu chuyện sống</span>
-        </h1>
 
-        <p>Chúng tôi tin rằng, mỗi công trình thiết kế luôn bắt đầu từ con người và những câu chuyện mang tính ước vọng. </p>
-        <p>Ở Dreamese, Kiến trúc sư đóng vai trò như những Dịch giả biến những câu chuyện,
-            những ước vọng tưởng chừng như rất mơ hồ thành không gian sống đích thực.</p>
-        <p>Ở Dreamese, chúng tôi tôn trọng, trân quý và luôn luôn lắng nghe khách hàng 1 cách chân thành nhất 
-            để mọi công trình là những chặng đường đáng nhớ và mang tính thành tựu.</p>
-        <div class="hero-note">DREAMESE STUDIO — Dịch giả ngôn ngữ giấc mơ</div>
+        <!-- ===== DESKTOP VERSION ===== -->
+        <div class="hero-desktop">
+            <h1>
+                Thiết kế không gian<br>
+                <span class="hero-line">như viết 1 câu chuyện sống</span>
+            </h1>
 
-        <div class="collaboration-line">
-            <span class="collab-text">In Collaboration with</span>
-            <img  src="MT_Logo.png"
-            alt="MT Construction Logo"
-            class="collab-logo" >
-            <span class="collab-name">MT CONSTRUCTION</span>
+            <p>Chúng tôi tin rằng, mỗi công trình thiết kế luôn bắt đầu từ con người và những câu chuyện mang tính ước vọng.</p>
+            <p>Ở Dreamese, Kiến trúc sư đóng vai trò như những Dịch giả biến những câu chuyện,
+                những ước vọng tưởng chừng như rất mơ hồ thành không gian sống đích thực.</p>
+            <p>Ở Dreamese, chúng tôi tôn trọng, trân quý và luôn luôn lắng nghe khách hàng 1 cách chân thành nhất
+                để mọi công trình là những chặng đường đáng nhớ và mang tính thành tựu.</p>
         </div>
 
+        <!-- ===== MOBILE VERSION ===== -->
+        <div class="hero-mobile">
+            <h1>
+                Thiết kế không gian<br>
+                <span class="hero-line">kể câu chuyện của bạn</span>
+            </h1>
+
+            <p>
+                Dreamese Studio đồng hành kiến tạo không gian sống
+                mang đậm dấu ấn cá nhân và giá trị bền vững.
+            </p>
+        </div>
+
+        <div class="hero-note">DREAMESE STUDIO — Dịch giả ngôn ngữ giấc mơ</div>
+
     </div>
-        
 </section>
+
 
 
 <section id="projects">
